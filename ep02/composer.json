@@ -1,0 +1,18 @@
+{
+    "name": "gabriel_cubas/phptips",
+    "autoload": {
+        "psr-4": {
+            "Gabriel\\ep02\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gabriel"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "coffeecode/router": "^2.0",
+        "coffeecode/datalayer": "^2.0"
+    }
+}
