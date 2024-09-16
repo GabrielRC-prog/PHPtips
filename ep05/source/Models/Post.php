@@ -1,6 +1,6 @@
 <?php
 
-namespace Source\Models;
+namespace source\Models;
 
 use CoffeeCode\DataLayer\DataLayer;
 
@@ -10,4 +10,5 @@ class Post extends DataLayer
     {
         parent::__construct("posts", ["title", "description"]);
     }
-}
+} 
+
