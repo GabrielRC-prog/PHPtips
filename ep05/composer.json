@@ -1,7 +1,7 @@
 {
     "require": {
+        "fakerphp/faker": "^1.23",
         "coffeecode/datalayer": "^2.0",
-        "coffeecode/paginator": "^2.0",
-        "fakerphp/faker": "*" 
+        "coffeecode/paginator": "^2.0"
     }
 }
