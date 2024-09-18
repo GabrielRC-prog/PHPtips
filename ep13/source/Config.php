@@ -16,10 +16,10 @@ define ("DATA_LAYER_CONFIG", [
         PDO::ATTR_CASE => PDO::CASE_NATURAL]
 ]); 
 
-function url (string $path): string
+function url (string $uri = null): string
 {
-    if ($path){
-        return ROOT . "{$path}";
+    if ($uri){
+        return ROOT . "/{$uri}";
     }
     return ROOT;
 }

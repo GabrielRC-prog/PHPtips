@@ -15,9 +15,8 @@
                 <img src="https://cdn0.iconfinder.com/data/icons/the-middle-ages/500/Knight_dragon-64.png" title="Logo" alt="Logo">
             </a>
             <div id="menu">
-                <a href="?pagina=cursos">Cursos</a>
-                <a href="?pagina=alunos">Alunos</a>
-                <a href="?pagina=matriculas">Matrículas</a>
+                <a href="?pagina=cursos">Cadastre-se</a>
+                <a href="?pagina=matriculas">Continuar sem login</a>
             </div>
         </div> <!-- Fechamento da div container -->
     </header>
@@ -26,18 +25,17 @@
         <?php
         // Conexão com o banco de dados REVISAR!!!!!!!!!!!!!!!!!!!!!!!!!
 
+        //revisar essa parte também 
         if (isset($_GET['pagina'])) {
             $pagina = $_GET['pagina'];
         } else {
             $pagina = 'home';
         }
 
-        if ($pagina == 'alunos') {
-            include 'alunos.php';
-        } elseif ($pagina == 'cursos') {
-            include 'cursos.php';
-        } elseif ($pagina == 'matriculas') {
-            include 'matriculas.php';
+        if ($pagina == 'Cadastro') {
+            include 'cadastro.php';
+        } elseif ($pagina == 'guest') {
+            include 'guest.php';
         } else {
             include 'home.php';
         }

@@ -18,7 +18,7 @@
     <?= $v->section("content"); ?>
 </main>
 
-<script src="<?= url(path: "/ep13/theme/assets/js/jquery.js"); ?>"></script>
+<script src="<?= url("/ep13/theme/assets/js/jquery.js"); ?>"></script>
 <?= $v->section("js"); ?>
     
 </body>

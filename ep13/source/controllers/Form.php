@@ -1,6 +1,6 @@
 <?php
 
-namespace source\controllers;
+namespace Source\Controllers;
 
 use League\Plates\Engine;
 use Source\Models\User;
@@ -17,7 +17,7 @@ class Form
 
     public function home(): void
     {
-        $users = (new User())->find()->fetch(true);
+        $users = (new User())->find()->order(columnOrder: "first_name")->fetch(true);
         echo $this->view->render("home", [
             "users" => $users
         ]);

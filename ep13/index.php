@@ -11,13 +11,13 @@ require __DIR__ . "/source/Config.php";
 require __DIR__ . "/source/controllers/Form.php";
 require __DIR__  . "/source/models/User.php";
 
-$router = new Router(projectUrl: ROOT);
+$router = new Router(ROOT);
 $router->namespace("Source\Controllers");
 
 $router->group(null);
-$router->get("/", "Form:home", "form.home");
-$router->post("/create", "Form:create", "form.create");
-$router->get("/delete", "Form:delete", "form.delete");
+$router->get(route:"/", handler: "Form:home", name: "form.home");
+$router->post(route:"/create", handler:"Form:create", name: "form.create");
+$router->post(route:"/delete", handler:"Form:delete", name: "form.delete");
 
 $router->dispatch();
 
